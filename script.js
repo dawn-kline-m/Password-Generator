@@ -10,7 +10,7 @@ let pwdElement = 0
 
 let builtArray = []
 let builtPwd = []
-builtArray
+//builtArray
 function generatePassword() {
 
   if (confirm("Do you want your password to contain Lowercase Letters?")) {
@@ -29,7 +29,7 @@ function generatePassword() {
     //console.log(builtArray);
   }
   console.log(builtArray)
-  if (builtArray.length == 0){
+  if (builtArray.length == 0) {
     alert("Pick at least one type of character")
     return generatePassword();
   }
@@ -38,19 +38,16 @@ function generatePassword() {
 
   // Obtaining length of password to be generated
   let passwordLength = prompt("how long do you want the password, pick a number between 8 and 128?")
-  if(isNaN(passwordLength) == true || passwordLength  < 8 || passwordLength > 128) {
+  if (isNaN(passwordLength) == true || passwordLength < 8 || passwordLength > 128) {
     alert("Pick a number between 8 and 128")
     return generatePassword();
   }
   //randomly select values for password
   for (let i = 0; i < passwordLength; i++) {
     pwdElement = Math.floor(Math.random() * builtArray.length);
-    console.log(pwdElement)
+    //console.log(pwdElement)
     //password += "x";
     password += builtArray[pwdElement];
-
-    //password += (Math.floor(Math.random() * builtArray.length)
-    //password += E
 
   }
 
