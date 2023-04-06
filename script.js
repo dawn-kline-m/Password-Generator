@@ -8,25 +8,21 @@ let specialChar = ['!', '#', '$', '%', '&', ')', '*', '+', ',', '/', ':', ';', '
 let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 let pwdElement = 0
 
-let builtArray = []
-let builtPwd = []
 //builtArray
 function generatePassword() {
-
+  builtArray = []
+  builtPwd = []
   if (confirm("Do you want your password to contain Lowercase Letters?")) {
     builtArray = [...builtArray, ...lowerAlphabet]
-
   }
   if (confirm("Do you want your password to contain Uppercase Letters?")) {
     builtArray = [...builtArray, ...upperAlphabet]
-
-  } if (confirm("Do you want your password to contain Numbers?")) {
+  }
+  if (confirm("Do you want your password to contain Numbers?")) {
     builtArray = [...builtArray, ...numbers]
-
   }
   if (confirm("Do you want your password to contain Special Characters?")) {
     builtArray = [...builtArray, ...specialChar]
-    //console.log(builtArray);
   }
   console.log(builtArray)
   if (builtArray.length == 0) {
@@ -37,20 +33,16 @@ function generatePassword() {
   let password = "";
 
   // Obtaining length of password to be generated
-  let passwordLength = prompt("how long do you want the password, pick a number between 8 and 128?")
+  let passwordLength = prompt("H9ow long do you want the password, pick a number between 8 and 128?")
   if (isNaN(passwordLength) == true || passwordLength < 8 || passwordLength > 128) {
     alert("Pick a number between 8 and 128")
     return generatePassword();
   }
-  //randomly select values for password
+
   for (let i = 0; i < passwordLength; i++) {
     pwdElement = Math.floor(Math.random() * builtArray.length);
-    //console.log(pwdElement)
-    //password += "x";
     password += builtArray[pwdElement];
-
   }
-
   return password;
 }
 
@@ -59,7 +51,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
