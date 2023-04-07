@@ -2,7 +2,7 @@
 
 ## Description 
 
-This is Challenge #3 starter code is modified to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript.
+This is Challenge #3, starter code is modified to create an application that enables employees to generate random passwords based on criteria that they have selected. This application runs in the browser and features dynamically updated HTML and CSS powered by JavaScript.
 
 
 ## Functionality
@@ -10,7 +10,7 @@ This is Challenge #3 starter code is modified to create an application that enab
 
 When the user clicks the button to generate a password, the user is presented with a series of prompts for password criteria.
 
-The user is able to confirm the type of character to include in a password ( Lower case, upper case, numeric, and/or special characters)
+The user is able to confirm the type of character to include in a password (Lower case, upper case, numeric, and/or special characters)
 
 The user is able to select the criteria to include in the password.
 
